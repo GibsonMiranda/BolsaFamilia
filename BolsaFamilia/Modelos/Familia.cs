@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos
 {
-    internal class Familia
+    public class Familia
     {
         public int Id { get; set; }
+        public virtual Beneficio Beneficio { get; set; }        
         public string Logradouro { get; set; }
         public string Numero { get; set; }
         public string Cep { get; set; }

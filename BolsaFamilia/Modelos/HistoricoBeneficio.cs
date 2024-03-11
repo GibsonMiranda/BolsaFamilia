@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos
 {
-    internal class HistoricoBeneficio
+    public class HistoricoBeneficio
     {
         public int Id { get; set; }
         public virtual Beneficio Beneficio { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos
 {
-    internal class Pessoa
+    public class Pessoa
     {
         public int Id { get; set; }
 

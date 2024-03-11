@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos.Enum
 {
-    internal enum ETipoVinculo
+    public enum ETipoVinculo
     {
         TITULAR,
         CONJUGE,

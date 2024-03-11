@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos.Enum
 {
-    internal enum EMotivoRejeicao
+    public enum EMotivoRejeicao
     {
         RENDA_INCOMPATIVEL,
         SEM_REGISTRO_CAD_UNICO

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos.Enum
 {
-    internal enum ETipoBeneficio
+    public enum ETipoBeneficio
     {
         BRC,
         BPI,

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos
 {
-    internal class AliquotaTipoBeneficio
+    public class AliquotaTipoBeneficio
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }
