@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Infra
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         DbSet<Pessoa> Pessoa { get; set; }
         DbSet<Familia> Familia { get; set; }

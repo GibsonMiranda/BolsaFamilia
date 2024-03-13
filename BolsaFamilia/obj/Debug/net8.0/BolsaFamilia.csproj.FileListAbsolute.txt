@@ -134,3 +134,7 @@ C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.dll
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.pdb
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Infra.dll
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Infra.pdb

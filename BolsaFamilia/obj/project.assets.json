@@ -1560,6 +1560,37 @@
             "rid": "win"
           }
         }
+      },
+      "BolsaFamilia.Shared.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.2",
+          "Microsoft.EntityFrameworkCore.Proxies": "8.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BolsaFamilia.Shared.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BolsaFamilia.Shared.Entity.dll": {}
+        }
+      },
+      "BolsaFamilia.Shared.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BolsaFamilia.Shared.Entity": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.2",
+          "Microsoft.EntityFrameworkCore.Proxies": "8.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BolsaFamilia.Shared.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BolsaFamilia.Shared.Infra.dll": {}
+        }
       }
     }
   },
@@ -4202,10 +4233,22 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BolsaFamilia.Shared.Entity/1.0.0": {
+      "type": "project",
+      "path": "../BolsaFamilia.Shared.Entity/BolsaFamilia.Shared.Entity.csproj",
+      "msbuildProject": "../BolsaFamilia.Shared.Entity/BolsaFamilia.Shared.Entity.csproj"
+    },
+    "BolsaFamilia.Shared.Infra/1.0.0": {
+      "type": "project",
+      "path": "../BolsaFamilia.Shared.Infra/BolsaFamilia.Shared.Infra.csproj",
+      "msbuildProject": "../BolsaFamilia.Shared.Infra/BolsaFamilia.Shared.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BolsaFamilia.Shared.Entity >= 1.0.0",
+      "BolsaFamilia.Shared.Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Proxies >= 8.0.2",
@@ -4239,7 +4282,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj": {
+              "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj"
+            },
+            "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj": {
+              "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

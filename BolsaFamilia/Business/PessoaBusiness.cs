@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Business
 {
-    internal class PessoaBusiness (AppRepository<Pessoa> pessoaRepository, AppRepository<RendaPessoa> rendaPessoa)
+    public class PessoaBusiness (AppRepository<Pessoa> pessoaRepository, AppRepository<RendaPessoa> rendaPessoa)
     {
         
         public void CadastrarPessoa(string nome, string cpf, DateTime nascimento)

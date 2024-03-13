@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Infra
 {
-    internal class AppRepository<T> (AppDbContext context) where T : class
+    public class AppRepository<T> (AppDbContext context) where T : class
     {
         private DbSet<T> DbSet = context.Set<T>();
         public IList<T> Listar()

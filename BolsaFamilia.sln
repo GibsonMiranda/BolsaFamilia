@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BolsaFamilia", "BolsaFamilia\BolsaFamilia.csproj", "{C30FBE98-F832-402B-B208-8D7699D9D2AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BolsaFamilia", "BolsaFamilia\BolsaFamilia.csproj", "{C30FBE98-F832-402B-B208-8D7699D9D2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BolsaFamilia.Shared.Entity", "BolsaFamilia.Shared.Entity\BolsaFamilia.Shared.Entity.csproj", "{3BE06BFC-C942-40DA-A29B-A42B7EC53B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BolsaFamilia.Shared.Infra", "BolsaFamilia.Shared.Infra\BolsaFamilia.Shared.Infra.csproj", "{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C30FBE98-F832-402B-B208-8D7699D9D2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C30FBE98-F832-402B-B208-8D7699D9D2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C30FBE98-F832-402B-B208-8D7699D9D2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE06BFC-C942-40DA-A29B-A42B7EC53B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE06BFC-C942-40DA-A29B-A42B7EC53B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE06BFC-C942-40DA-A29B-A42B7EC53B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE06BFC-C942-40DA-A29B-A42B7EC53B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
