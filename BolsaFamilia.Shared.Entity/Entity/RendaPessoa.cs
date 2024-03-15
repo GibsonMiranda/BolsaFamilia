@@ -13,5 +13,9 @@ namespace BolsaFamilia.Modelos
         public DateTime DataRegistro { get; set; }
         public double Valor { get; set; }
 
+        public RendaPessoa()
+        {
+            DataRegistro = DateTime.Now;
+        }
     }
 }

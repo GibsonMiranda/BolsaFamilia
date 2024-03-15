@@ -3,37 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}|BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia.shared.infra\\infra\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}|BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj|solutionrelative:bolsafamilia.shared.infra\\infra\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|solutionrelative:bolsafamilia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}|BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia.shared.infra\\bolsafamilia.shared.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{08C3287B-15C9-41DC-BFF9-DFED00AF39D7}|BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj|solutionrelative:bolsafamilia.shared.infra\\bolsafamilia.shared.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.Pessoa.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia\\business\\pessoabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|solutionrelative:bolsafamilia\\business\\pessoabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia\\bolsafamilia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|solutionrelative:bolsafamilia\\bolsafamilia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|solutionrelative:bolsafamilia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.PessoaFamilia.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.Pessoa.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|c:\\users\\gibso\\onedrive\\documentos\\exercicios c# alura\\bolsafamilia\\bolsafamilia\\bolsafamilia\\business\\validacao\\validacaocpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C30FBE98-F832-402B-B208-8D7699D9D2AF}|BolsaFamilia\\BolsaFamilia.csproj|solutionrelative:bolsafamilia\\business\\validacao\\validacaocpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.Beneficio.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.RendaPessoa.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,45 +24,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\Infra\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BolsaFamilia.Shared.Infra\\Infra\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\Infra\\AppDbContext.cs",
-              "RelativeToolTip": "BolsaFamilia.Shared.Infra\\Infra\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "DocumentIndex": 2,
+              "Title": "PessoaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Business\\PessoaBusiness.cs",
+              "RelativeDocumentMoniker": "BolsaFamilia\\Business\\PessoaBusiness.cs",
+              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Business\\PessoaBusiness.cs",
+              "RelativeToolTip": "BolsaFamilia\\Business\\PessoaBusiness.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T23:42:10.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BolsaFamilia.Shared.Infra",
-              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
-              "RelativeDocumentMoniker": "BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
-              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
-              "RelativeToolTip": "BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T23:41:17.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BolsaFamilia",
-              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.csproj",
-              "RelativeDocumentMoniker": "BolsaFamilia\\BolsaFamilia.csproj",
-              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.csproj",
-              "RelativeToolTip": "BolsaFamilia\\BolsaFamilia.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T23:40:02.118Z",
+              "WhenOpened": "2024-03-09T01:04:03.353Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -94,67 +50,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PessoaBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Business\\PessoaBusiness.cs",
-              "RelativeDocumentMoniker": "BolsaFamilia\\Business\\PessoaBusiness.cs",
-              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Business\\PessoaBusiness.cs",
-              "RelativeToolTip": "BolsaFamilia\\Business\\PessoaBusiness.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Program.cs",
+              "RelativeDocumentMoniker": "BolsaFamilia\\Program.cs",
+              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Program.cs*",
+              "RelativeToolTip": "BolsaFamilia\\Program.cs*",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABgAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T01:04:03.353Z",
+              "WhenOpened": "2024-03-14T00:13:47.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "dbo.PessoaFamilia [Dados]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.PessoaFamilia.sql",
-              "ToolTip": "dbo.PessoaFamilia [Dados]",
+              "DocumentIndex": 3,
+              "Title": "dbo.RendaPessoa [Dados]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.RendaPessoa.sql",
+              "ToolTip": "dbo.RendaPessoa [Dados]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-11T01:29:45.443Z"
+              "WhenOpened": "2024-03-14T00:13:55.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "dbo.Pessoa [Dados]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.Pessoa.sql",
               "ToolTip": "dbo.Pessoa [Dados]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-11T01:27:14.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ValidacaoCpf.cs",
-              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Business\\Validacao\\ValidacaoCpf.cs",
-              "RelativeDocumentMoniker": "BolsaFamilia\\Business\\Validacao\\ValidacaoCpf.cs",
-              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Business\\Validacao\\ValidacaoCpf.cs",
-              "RelativeToolTip": "BolsaFamilia\\Business\\Validacao\\ValidacaoCpf.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T22:17:19.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Program.cs",
-              "RelativeDocumentMoniker": "BolsaFamilia\\Program.cs",
-              "ToolTip": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia\\Program.cs",
-              "RelativeToolTip": "BolsaFamilia\\Program.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T22:56:05.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dbo.Beneficio [Dados]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BolsaFamilia/True/SqlTable/dbo.Beneficio.sql",
-              "ToolTip": "dbo.Beneficio [Dados]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-10T22:08:12.959Z"
+              "WhenOpened": "2024-03-11T01:27:14.112Z",
+              "EditorCaption": ""
             }
           ]
         }

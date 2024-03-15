@@ -1,53 +1,69 @@
 ﻿using BolsaFamilia.Business.Validacao;
 using BolsaFamilia.Infra;
 using BolsaFamilia.Modelos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BolsaFamilia.Business
 {
     public class PessoaBusiness (AppRepository<Pessoa> pessoaRepository, AppRepository<RendaPessoa> rendaPessoa)
     {
         
-        public void CadastrarPessoa(string nome, string cpf, DateTime nascimento)
+        public void CadastrarPessoa(Pessoa pessoa) // objeto pessoa vindo do front end
         {
-            Pessoa pessoa;
-            ValidarDadosNulos(nome, cpf, nascimento);
-            var cpfValido = ValidacaoCpf.ValidarCpf(cpf);
-            cpf = cpf.Trim();
-            cpf = cpf.Replace(".", "").Replace("-", "");
-            if (cpfValido)
+            
+            ValidarDadosNulos(pessoa);
+            var validarCpf = ValidacaoCpf.ValidarCpf(pessoa.Cpf);
+            pessoa.Cpf = validarCpf.Item2;
+
+            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Cpf.Equals(pessoa.Cpf));
+            if (pessoaExistente is not null ) 
             {
-                pessoa = new Pessoa() { Nome = nome, Cpf = cpf, DataNascimento = nascimento};
+                throw new Exception("CPF já está cadastro na base de dados");
+            }
+            if (validarCpf.Item1)
+            {
                 pessoaRepository.Adicionar(pessoa);
-                Console.WriteLine("sucesso");
+                Console.WriteLine("Cadastro Realizado Com Sucesso!");
             }          
         }
 
-        public void CadastrarRenda(int idPessoa, double valor)
+        public void CadastrarRenda(Pessoa pessoa, double valor)
         {
-            if (idPessoa == null || valor == null ) 
+            if (pessoa.Id == 0 || valor == 0) 
             {
-                throw new ArgumentNullException("valor nulo");
+                throw new Exception("valor inválido, tente novamente");
             }
-            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == idPessoa);
+            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == pessoa.Id);
             if (pessoaExistente is not null)
             {
                 RendaPessoa cadastroRenda = new RendaPessoa() { DataRegistro = DateTime.Now, Valor = valor, Pessoa = pessoaExistente};
                 rendaPessoa.Adicionar(cadastroRenda);
-                Console.WriteLine("sucesso");
+                Console.WriteLine("Renda Cadastrada Com Sucesso!");
             }
         }
 
-
-        public void ValidarDadosNulos(string nome, string cpf, DateTime nascimento)
+        public void AtualizarDadosCadastrais(Pessoa pessoa)
         {
-            if (nome == null || cpf == null || nascimento == null) 
+            ValidarDadosNulos(pessoa);
+            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == pessoa.Id);
+
+            if (!pessoaExistente.Cpf.Equals(pessoa.Cpf))
             {
-                throw new Exception("valor nulo");
+                throw new Exception("O campo CPF não pode ser alterado");
+            }
+            pessoaExistente.Nome = pessoa.Nome;
+            pessoaExistente.DataNascimento = pessoa.DataNascimento;
+            pessoaRepository.Atualizar(pessoaExistente);
+            Console.WriteLine("alteração realizada com sucesso");
+        }
+        public void ValidarDadosNulos(Pessoa pessoa)
+        {
+            if (pessoa is null)
+            {
+                throw new Exception("informe a pessoa para atualização");
+            }
+            if (pessoa.Nome is null || pessoa.Cpf is null) 
+            {
+                throw new Exception("Nome ou Cpf Inválidos!");
             }
         }
     }

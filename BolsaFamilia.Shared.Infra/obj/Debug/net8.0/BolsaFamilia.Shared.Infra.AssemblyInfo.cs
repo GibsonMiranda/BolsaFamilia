@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BolsaFamilia.Shared.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0302d43b490fca347a63858d9766750202974ca6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f974b84815e456d0c440e6695dfef160bd6d0f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BolsaFamilia.Shared.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BolsaFamilia.Shared.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
