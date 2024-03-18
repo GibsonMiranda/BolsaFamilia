@@ -18,6 +18,10 @@ namespace BolsaFamilia.Business
             var titularExistente = pessoaFamiliaRepository.RecuperarUmPor(p => p.TipoVinculo.Equals(ETipoVinculo.TITULAR)
                                                                         && p.Familia.Id == familia.Id);
             
+            pessoaFamilia.Familia = familia;
+            pessoaFamilia.Pessoa = pessoa;
+            pessoaFamilia.TipoVinculo = vinculo;
+            pessoaFamiliaRepository.Adicionar(pessoaFamilia);
 
         }
 
