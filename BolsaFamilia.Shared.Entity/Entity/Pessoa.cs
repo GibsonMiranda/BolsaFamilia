@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BolsaFamilia.Shared.Entity.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos
 {
-    public class Pessoa
+    public class Pessoa : IEntity
     {
         public int Id { get; set; }
 

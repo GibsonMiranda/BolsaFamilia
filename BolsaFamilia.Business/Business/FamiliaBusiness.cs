@@ -1,4 +1,5 @@
-﻿using BolsaFamilia.Infra;
+﻿using BolsaFamilia.Business.Business;
+using BolsaFamilia.Infra;
 using BolsaFamilia.Modelos;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,13 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Business
 {
-    public class FamiliaBusiness (AppRepository<Familia> familiaRepository)
+    public class FamiliaBusiness : AppBusiness<Familia>
     {
+        public FamiliaBusiness(AppRepository<Familia> familiaRepository) : base(familiaRepository) { }
         public void CadastrarFamilia(Familia familia) 
         {
             ValidarDados(familia);
-            familiaRepository.Adicionar(familia);
+            Repository.Adicionar(familia);
         }
 
         private void ValidarDados(Familia familia)

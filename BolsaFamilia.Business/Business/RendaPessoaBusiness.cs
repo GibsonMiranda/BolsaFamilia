@@ -8,22 +8,28 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Business.Business
 {
-    public class RendaPessoaBusiness (AppRepository<RendaPessoa> rendaPessoaRepository, PessoaBusiness pessoaBusiness)
+    public class RendaPessoaBusiness : AppBusiness<RendaPessoa>
     {
-        public void CadastrarRenda(Pessoa pessoa, double valor)
+        private PessoaBusiness pessoaBusiness;
+        public RendaPessoaBusiness(AppRepository<RendaPessoa> rendaPessoaRepository, PessoaBusiness pessoaBusiness) : base(rendaPessoaRepository) 
         {
-             
-            if (pessoa.Id == 0 || valor == 0)
+            this.pessoaBusiness = pessoaBusiness; 
+        }
+
+            public void CadastrarRenda(Pessoa pessoa, double valor)
             {
-                throw new Exception("valor inválido, tente novamente");
-            }
-            var pessoaExistente = pessoaBusiness.RecuperarPessoaPorId(pessoa);
-            if (pessoaExistente is not null)
-            {
-                RendaPessoa cadastroRenda = new RendaPessoa() { DataRegistro = DateTime.Now, Valor = valor, Pessoa = pessoaExistente };
-                rendaPessoaRepository.Adicionar(cadastroRenda);
-                Console.WriteLine("Renda Cadastrada Com Sucesso!");
+
+                if (pessoa.Id == 0 || valor == 0)
+                {
+                    throw new Exception("valor inválido, tente novamente");
+                }
+            var pessoaExistente = pessoaBusiness.Recuperar(pessoa);
+                if (pessoaExistente is not null)
+                {
+                    RendaPessoa cadastroRenda = new RendaPessoa() { DataRegistro = DateTime.Now, Valor = valor, Pessoa = pessoaExistente };
+                    Repository.Adicionar(cadastroRenda);
+                    Console.WriteLine("Renda Cadastrada Com Sucesso!");
+                }
             }
         }
-    }
-}
+    } 

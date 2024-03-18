@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj": {}
+    "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj": {
+    "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj",
         "projectName": "BolsaFamilia.Shared.Entity",
-        "projectPath": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj",
-        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\obj\\",
+        "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj",
+        "packagesPath": "C:\\Users\\gibso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gibso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,21 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj": {
+    "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
         "projectName": "BolsaFamilia.Shared.Infra",
-        "projectPath": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
-        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\obj\\",
+        "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\BolsaFamilia.Shared.Infra.csproj",
+        "packagesPath": "C:\\Users\\gibso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gibso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj": {
-                "projectPath": "C:\\Users\\Pichau\\Documents\\bolsaf\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj"
+              "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj": {
+                "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj"
               }
             }
           }
@@ -119,6 +124,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -166,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
 ﻿using BolsaFamilia.Modelos.Enum;
+using BolsaFamilia.Shared.Entity.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BolsaFamilia.Modelos
 {
-    public class AliquotaTipoBeneficio
+    public class AliquotaTipoBeneficio : IEntity
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }

@@ -167,7 +167,7 @@ namespace BolsaFamilia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DataDesvinculo")
+                    b.Property<DateTime?>("DataDesvinculo")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataVinculo")
@@ -176,7 +176,7 @@ namespace BolsaFamilia.Migrations
                     b.Property<int>("FamiliaId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MotivoDesvinculo")
+                    b.Property<int?>("MotivoDesvinculo")
                         .HasColumnType("int");
 
                     b.Property<int>("PessoaId")

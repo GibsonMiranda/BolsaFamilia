@@ -1,17 +1,15 @@
-﻿using BolsaFamilia.Business.Validacao;
+﻿using BolsaFamilia.Business.Business;
+using BolsaFamilia.Business.Validacao;
 using BolsaFamilia.Infra;
 using BolsaFamilia.Modelos;
 
 namespace BolsaFamilia.Business
 {
-    public class PessoaBusiness (AppRepository<Pessoa> pessoaRepository, AppRepository<RendaPessoa> rendaPessoa)
+    public class PessoaBusiness : AppBusiness<Pessoa>
     {
-        public Pessoa RecuperarPessoaPorId(Pessoa pessoa) 
-        {
-            ValidarDadosNulos(pessoa);
-            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == pessoa.Id);
-            return pessoaExistente;
-        }
+        public PessoaBusiness(AppRepository<Pessoa> pessoaRepository) : base(pessoaRepository) { }
+        
+        
 
         public void CadastrarPessoa(Pessoa pessoa) // objeto pessoa vindo do front end
         {
@@ -20,14 +18,14 @@ namespace BolsaFamilia.Business
             var validarCpf = ValidacaoCpf.ValidarCpf(pessoa.Cpf);
             pessoa.Cpf = validarCpf.Item2;
 
-            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Cpf.Equals(pessoa.Cpf));
+            var pessoaExistente = Repository.RecuperarUmPor(p => p.Cpf.Equals(pessoa.Cpf));
             if (pessoaExistente is not null ) 
             {
                 throw new Exception("CPF já está cadastro na base de dados");
             }
             if (validarCpf.Item1)
             {
-                pessoaRepository.Adicionar(pessoa);
+                Repository.Adicionar(pessoa);
                 Console.WriteLine("Cadastro Realizado Com Sucesso!");
             }          
         }
@@ -35,7 +33,7 @@ namespace BolsaFamilia.Business
         public void AtualizarDadosCadastrais(Pessoa pessoa)
         {
             ValidarDadosNulos(pessoa);
-            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == pessoa.Id);
+            var pessoaExistente = Repository.RecuperarUmPor(p => p.Id == pessoa.Id);
 
             if (!pessoaExistente.Cpf.Equals(pessoa.Cpf))
             {
@@ -43,10 +41,10 @@ namespace BolsaFamilia.Business
             }
             pessoaExistente.Nome = pessoa.Nome;
             pessoaExistente.DataNascimento = pessoa.DataNascimento;
-            pessoaRepository.Atualizar(pessoaExistente);
+            Repository.Atualizar(pessoaExistente);
             Console.WriteLine("alteração realizada com sucesso");
         }
-        public void ValidarDadosNulos(Pessoa pessoa)
+        private void ValidarDadosNulos(Pessoa pessoa)
         {
             if (pessoa is null)
             {
