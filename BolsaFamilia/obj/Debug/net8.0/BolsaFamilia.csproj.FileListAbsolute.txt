@@ -138,3 +138,5 @@ C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.pdb
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Infra.dll
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Shared.Infra.pdb
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Business.dll
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\bin\Debug\net8.0\BolsaFamilia.Business.pdb

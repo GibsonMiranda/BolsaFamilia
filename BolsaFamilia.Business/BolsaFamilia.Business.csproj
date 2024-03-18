@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BolsaFamilia.Shared.Entity\BolsaFamilia.Shared.Entity.csproj" />
+    <ProjectReference Include="..\BolsaFamilia.Shared.Infra\BolsaFamilia.Shared.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

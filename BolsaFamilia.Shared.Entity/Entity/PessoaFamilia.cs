@@ -14,7 +14,7 @@ namespace BolsaFamilia.Modelos
         public virtual Familia Familia { get; set; }
         public ETipoVinculo TipoVinculo { get; set; }
         public DateTime DataVinculo { get; set; }
-        public DateTime DataDesvinculo { get; set; }
-        public ETipoDesvinculo MotivoDesvinculo { get; set; }
+        public DateTime? DataDesvinculo { get; set; }
+        public ETipoDesvinculo? MotivoDesvinculo { get; set; }
     }
 }

@@ -6,7 +6,13 @@ namespace BolsaFamilia.Business
 {
     public class PessoaBusiness (AppRepository<Pessoa> pessoaRepository, AppRepository<RendaPessoa> rendaPessoa)
     {
-        
+        public Pessoa RecuperarPessoaPorId(Pessoa pessoa) 
+        {
+            ValidarDadosNulos(pessoa);
+            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == pessoa.Id);
+            return pessoaExistente;
+        }
+
         public void CadastrarPessoa(Pessoa pessoa) // objeto pessoa vindo do front end
         {
             
@@ -24,21 +30,6 @@ namespace BolsaFamilia.Business
                 pessoaRepository.Adicionar(pessoa);
                 Console.WriteLine("Cadastro Realizado Com Sucesso!");
             }          
-        }
-
-        public void CadastrarRenda(Pessoa pessoa, double valor)
-        {
-            if (pessoa.Id == 0 || valor == 0) 
-            {
-                throw new Exception("valor inválido, tente novamente");
-            }
-            var pessoaExistente = pessoaRepository.RecuperarUmPor(p => p.Id == pessoa.Id);
-            if (pessoaExistente is not null)
-            {
-                RendaPessoa cadastroRenda = new RendaPessoa() { DataRegistro = DateTime.Now, Valor = valor, Pessoa = pessoaExistente};
-                rendaPessoa.Adicionar(cadastroRenda);
-                Console.WriteLine("Renda Cadastrada Com Sucesso!");
-            }
         }
 
         public void AtualizarDadosCadastrais(Pessoa pessoa)

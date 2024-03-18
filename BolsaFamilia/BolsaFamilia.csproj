@@ -22,10 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\BolsaFamilia.Business\BolsaFamilia.Business.csproj" />
     <ProjectReference Include="..\BolsaFamilia.Shared.Entity\BolsaFamilia.Shared.Entity.csproj" />
     <ProjectReference Include="..\BolsaFamilia.Shared.Infra\BolsaFamilia.Shared.Infra.csproj" />
   </ItemGroup>

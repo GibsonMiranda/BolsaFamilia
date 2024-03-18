@@ -1561,6 +1561,20 @@
           }
         }
       },
+      "BolsaFamilia.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BolsaFamilia.Shared.Entity": "1.0.0",
+          "BolsaFamilia.Shared.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BolsaFamilia.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BolsaFamilia.Business.dll": {}
+        }
+      },
       "BolsaFamilia.Shared.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4234,6 +4248,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BolsaFamilia.Business/1.0.0": {
+      "type": "project",
+      "path": "../BolsaFamilia.Business/BolsaFamilia.Business.csproj",
+      "msbuildProject": "../BolsaFamilia.Business/BolsaFamilia.Business.csproj"
+    },
     "BolsaFamilia.Shared.Entity/1.0.0": {
       "type": "project",
       "path": "../BolsaFamilia.Shared.Entity/BolsaFamilia.Shared.Entity.csproj",
@@ -4247,6 +4266,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BolsaFamilia.Business >= 1.0.0",
       "BolsaFamilia.Shared.Entity >= 1.0.0",
       "BolsaFamilia.Shared.Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
@@ -4283,6 +4303,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Business\\BolsaFamilia.Business.csproj": {
+              "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Business\\BolsaFamilia.Business.csproj"
+            },
             "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj": {
               "projectPath": "C:\\Users\\gibso\\OneDrive\\Documentos\\EXERCICIOS C# ALURA\\BolsaFamilia\\BolsaFamilia\\BolsaFamilia.Shared.Entity\\BolsaFamilia.Shared.Entity.csproj"
             },
