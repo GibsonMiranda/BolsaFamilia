@@ -1,52 +1,57 @@
 ﻿using BolsaFamilia.Business.Business;
-using BolsaFamilia.Infra;
-using BolsaFamilia.Modelos;
-using BolsaFamilia.Modelos.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BolsaFamilia.Shared.Entity.Entity;
+using BolsaFamilia.Shared.Entity.Entity.Enum;
+using BolsaFamilia.Shared.Infra;
 
-namespace BolsaFamilia.Business
+namespace BolsaFamilia.Business;
+
+public class PessoaFamiliaBusiness : AppBusiness<PessoaFamilia>
 {
-    public class PessoaFamiliaBusiness : AppBusiness<PessoaFamilia>
+    public PessoaFamiliaBusiness(AppRepository<PessoaFamilia> pessoaFamiliaRepository,
+    AppRepository<Pessoa> pessoaRepository, AppRepository<Familia> familiaRepository) : base(pessoaFamiliaRepository) { }
+   
+
+    public void VincularMembroFamilia(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
     {
-        public PessoaFamiliaBusiness(AppRepository<PessoaFamilia> pessoaFamiliaRepository,
-        AppRepository<Pessoa> pessoaRepository, AppRepository<Familia> familiaRepository) : base (pessoaFamiliaRepository)
+        ValidarDados(pessoa, familia, vinculo);
+        PessoaFamilia pessoaFamilia = new PessoaFamilia 
         {
-            
+            Pessoa = pessoa,
+            Familia = familia,
+            TipoVinculo = vinculo
+        };
+        Repository.Adicionar(pessoaFamilia);
+
+    }
+
+    public void RemoverMembroFamilia(PessoaFamilia pessoaFamilia, ETipoDesvinculo motivoDesvinculo)
+    {
+           
+        if (pessoaFamilia.TipoVinculo.Equals(ETipoVinculo.TITULAR))
+        {
+            pessoaFamilia.Familia.Beneficio.DataBloqueio = DateTime.Now;
+            pessoaFamilia.Familia.Beneficio.MotivoBloqueio = EMotivoBloqueio.REMOCAO_TITULAR;
         }
+        pessoaFamilia.MotivoDesvinculo = motivoDesvinculo;
+        pessoaFamilia.DataDesvinculo = DateTime.Now;
+        Repository.Atualizar(pessoaFamilia);
+        Console.WriteLine("alteração realizada com sucesso!");
+    }
 
-        public void VincularMembroFamilia(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
+    private void ValidarDados(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
+    {
+        var titularExistente = Repository.RecuperarUmPor(p => p.TipoVinculo.Equals(ETipoVinculo.TITULAR)
+                                                                    && p.Familia.Id == familia.Id);
+        if (!vinculo.Equals(ETipoVinculo.TITULAR) && titularExistente is null) 
         {
-            ValidarDados(pessoa, familia, vinculo);
-            PessoaFamilia pessoaFamilia = new PessoaFamilia 
-            {
-                Pessoa = pessoa,
-                Familia = familia,
-                TipoVinculo = vinculo
-            };
-            Repository.Adicionar(pessoaFamilia);
-
+            throw new Exception("primeiro informe o titular");
         }
-
-        
-
-        private void ValidarDados(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
+        var pessoaAtiva = Repository.RecuperarUmPor(p => p.DataDesvinculo is null && p.Pessoa.Id == pessoa.Id);
+        if (pessoaAtiva is not null) 
         {
-            var titularExistente = Repository.RecuperarUmPor(p => p.TipoVinculo.Equals(ETipoVinculo.TITULAR)
-                                                                        && p.Familia.Id == familia.Id);
-            if (!vinculo.Equals(ETipoVinculo.TITULAR) && titularExistente is null) 
-            {
-                throw new Exception("primeiro informe o titular");
-            }
-            var pessoaAtiva = Repository.RecuperarUmPor(p => p.DataDesvinculo is null && p.Pessoa.Id == pessoa.Id);
-            if (pessoaAtiva is not null) 
-            {
-                var mensagem = pessoaAtiva.Familia.Id.Equals(familia.Id) ? "Pessoa já adicionada à familia" : "Pessoa já possui vínculo com outra família";
-                throw new Exception(mensagem);
-            }
+            var mensagem = pessoaAtiva.Familia.Id.Equals(familia.Id) ? "Pessoa já adicionada à familia" : "Pessoa já possui vínculo com outra família";
+            throw new Exception(mensagem);
         }
     }
 }
+

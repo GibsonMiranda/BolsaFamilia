@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BolsaFamilia.Shared.Entity.Entity.Enum;
 
-namespace BolsaFamilia.Modelos.Enum
+public enum ETipoBeneficio
 {
-    public enum ETipoBeneficio
-    {
-        BRC,
-        BPI,
-        BVF,
-        BVFN
-    }
+    BRC,
+    BPI,
+    BVF,
+    BVFN
 }
+

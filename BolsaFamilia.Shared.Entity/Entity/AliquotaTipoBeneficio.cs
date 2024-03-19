@@ -1,18 +1,12 @@
-﻿using BolsaFamilia.Modelos.Enum;
-using BolsaFamilia.Shared.Entity.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BolsaFamilia.Shared.Entity.Entity.Enum;
 
-namespace BolsaFamilia.Modelos
+namespace BolsaFamilia.Shared.Entity.Entity;
+
+public class AliquotaTipoBeneficio : IEntity
 {
-    public class AliquotaTipoBeneficio : IEntity
-    {
-        public int Id { get; set; }
-        public DateTime Data { get; set; }
-        public double Valor { get; set; }
-        public ETipoBeneficio TipoBeneficio { get; set; }
-    }
+    public int Id { get; set; }
+    public DateTime Data { get; set; }
+    public double Valor { get; set; }
+    public ETipoBeneficio TipoBeneficio { get; set; }
 }
+

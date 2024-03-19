@@ -1,18 +1,13 @@
-﻿using BolsaFamilia;
-using BolsaFamilia.Business;
-using BolsaFamilia.Infra;
-using BolsaFamilia.Modelos;
+﻿using BolsaFamilia.Business;
+using BolsaFamilia.Business.Business;
+using BolsaFamilia.Shared.Entity.Entity.Enum;
+using BolsaFamilia.Shared.Infra;
 using Microsoft.Extensions.DependencyInjection;
-using System.Linq.Expressions;
-using BolsaFamilia.Modelos.Enum;
 
+namespace BolsaFamilia;
 
-
-
-namespace BolsaFamilia
-{
     class Program
-    {
+{
         public static void Main(string[] args)
         {
             var serviceCollection = new ServiceCollection();
@@ -29,25 +24,22 @@ namespace BolsaFamilia
             var gibson = pessoaBussiness.RecuperarPorId(2);
             var familia = familiaBusiness.RecuperarPorId(1);
             //pessoaBussiness.AtualizarDadosCadastrais(gibson);
-           
+            var pessoaFamilia = pessoaFamiliaBusiness.RecuperarPorId(2);
 
             //var familia = new Familia {Cep = "000", Beneficio = beneficio, Cidade = "belem", Complemento = "ALTOS", Estado = "pará", Logradouro = "rua tanana", Numero = "13" };
             //familiaBusiness.CadastrarFamilia(familia);
 
-            pessoaFamiliaBusiness.VincularMembroFamilia(gibson, familia, ETipoVinculo.TITULAR);
+            pessoaFamiliaBusiness.RemoverMembroFamilia(pessoaFamilia, ETipoDesvinculo.MORTE);
            
         }
 
         public static void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>()
-                .AddScoped(typeof(AppRepository<>))
-                .AddScoped<PessoaBusiness>()
-                .AddScoped<FamiliaBusiness>()
-                .AddScoped<PessoaFamiliaBusiness>();
-        }
-
-        
-
-    }
+        services.AddDbContext<AppDbContext>()
+            .AddScoped(typeof(AppRepository<>))
+            .AddScoped<PessoaBusiness>()
+            .AddScoped<FamiliaBusiness>()
+            .AddScoped<PessoaFamiliaBusiness>()
+            .AddScoped<BeneficioBusiness>();
+        }    
 }

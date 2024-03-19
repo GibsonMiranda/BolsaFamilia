@@ -1,22 +1,15 @@
-﻿using BolsaFamilia.Shared.Entity.Entity;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace BolsaFamilia.Modelos
+namespace BolsaFamilia.Shared.Entity.Entity;
+
+public class Pessoa : IEntity
 {
-    public class Pessoa : IEntity
-    {
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        [MaxLength(100)]
-        public string Nome { get; set; }
+    [MaxLength(100)]
+    public string Nome { get; set; }
 
-        [MaxLength(11)]
-        public string Cpf { get; set; }       
-        public DateTime DataNascimento { get; set; }
-    }
+    [MaxLength(11)]
+    public string Cpf { get; set; }       
+    public DateTime DataNascimento { get; set; }
 }

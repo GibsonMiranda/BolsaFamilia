@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BolsaFamilia.Shared.Entity.Entity.Enum;
 
-namespace BolsaFamilia.Modelos.Enum
+public enum EMotivoRejeicao
 {
-    public enum EMotivoRejeicao
-    {
-        RENDA_INCOMPATIVEL,
-        SEM_REGISTRO_CAD_UNICO
-    }
+    RENDA_INCOMPATIVEL,
+    SEM_REGISTRO_CAD_UNICO
 }
+
