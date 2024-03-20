@@ -13,3 +13,18 @@ C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.csproj.AssemblyReference.cache
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia.Shared.Entity\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.runtimeconfig.json
 C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.genruntimeconfig.cache
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.deps.json
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.runtimeconfig.json
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.dll
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\bin\Debug\net8.0\BolsaFamilia.Shared.Entity.pdb
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.csproj.AssemblyReference.cache
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.AssemblyInfoInputs.cache
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.AssemblyInfo.cs
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.sourcelink.json
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.dll
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\refint\BolsaFamilia.Shared.Entity.dll
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.pdb
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\BolsaFamilia.Shared.Entity.genruntimeconfig.cache
+C:\Users\Pichau\Documents\bolsaf\BolsaFamilia\BolsaFamilia.Shared.Entity\obj\Debug\net8.0\ref\BolsaFamilia.Shared.Entity.dll

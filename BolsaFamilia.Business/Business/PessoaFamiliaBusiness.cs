@@ -7,10 +7,13 @@ namespace BolsaFamilia.Business;
 
 public class PessoaFamiliaBusiness : AppBusiness<PessoaFamilia>
 {
-    public PessoaFamiliaBusiness(AppRepository<PessoaFamilia> pessoaFamiliaRepository,
-    AppRepository<Pessoa> pessoaRepository, AppRepository<Familia> familiaRepository) : base(pessoaFamiliaRepository) { }
+    public PessoaFamiliaBusiness(AppRepository<PessoaFamilia> pessoaFamiliaRepository) : base(pessoaFamiliaRepository) { }
    
-
+    public PessoaFamilia? RecuperarFamiliaPorId(int idFamilia)
+    {
+        var familia = Repository.RecuperarUmPor(f => f.Familia.Id ==  idFamilia);
+        return familia;
+    }
     public void VincularMembroFamilia(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
     {
         ValidarDados(pessoa, familia, vinculo);
@@ -41,10 +44,21 @@ public class PessoaFamiliaBusiness : AppBusiness<PessoaFamilia>
     private void ValidarDados(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
     {
         var titularExistente = Repository.RecuperarUmPor(p => p.TipoVinculo.Equals(ETipoVinculo.TITULAR)
-                                                                    && p.Familia.Id == familia.Id);
-        if (!vinculo.Equals(ETipoVinculo.TITULAR) && titularExistente is null) 
+                                                                    && p.Familia.Id == familia.Id);      
+        if (!vinculo.Equals(ETipoVinculo.TITULAR) && titularExistente is null)
         {
             throw new Exception("primeiro informe o titular");
+        } 
+        else if (vinculo.Equals(ETipoVinculo.TITULAR) && titularExistente is not null && titularExistente.DataDesvinculo is null)
+        {
+            throw new Exception("nao é possível cadastrar mais de um titular");
+        }
+        
+        var conjugeExistente = Repository.RecuperarUmPor(p => p.TipoVinculo.Equals(ETipoVinculo.CONJUGE)
+                                                                    && p.Familia.Id == familia.Id && p.DataDesvinculo is null);
+        if (vinculo.Equals(ETipoVinculo.CONJUGE) && conjugeExistente is not null)
+        {
+            throw new Exception("não é possível cadastrar mais de um cônjuge");
         }
         var pessoaAtiva = Repository.RecuperarUmPor(p => p.DataDesvinculo is null && p.Pessoa.Id == pessoa.Id);
         if (pessoaAtiva is not null) 

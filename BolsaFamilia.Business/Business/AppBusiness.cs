@@ -21,5 +21,11 @@ public abstract class AppBusiness<T> where T : class, IEntity
         var objeto = Repository.RecuperarUmPor(p => p.Id == id);
         return objeto;
     }
+
+    public IEnumerable<T>? RecuperarListaPorId (int id) 
+    {
+        var result = Repository.RecuperarListaPor(p => p.Id == id);
+        return result;
+    }
 }
 
