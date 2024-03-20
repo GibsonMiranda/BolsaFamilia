@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BolsaFamilia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59f10f18da1b0ba221c1e5d721208682f0b25906")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f66944c9176c0888f0c6a447d788beb748b7c326")]
 [assembly: System.Reflection.AssemblyProductAttribute("BolsaFamilia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BolsaFamilia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
