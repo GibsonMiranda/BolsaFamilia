@@ -15,7 +15,7 @@ namespace BolsaFamilia;
             var serviceProvider = serviceCollection.BuildServiceProvider();
             var pessoaBussiness = serviceProvider.GetService<PessoaBusiness>();
             var familiaBusiness = serviceProvider.GetService<FamiliaBusiness>();
-           
+            var aliquotaTipoBeneficioBusiness = serviceProvider.GetService<AliquotaTipoBeneficioBusiness>();
             var pessoaFamiliaBusiness = serviceProvider.GetService<PessoaFamiliaBusiness>();
 
             //pessoaBussiness.CadastrarPessoa("gibson", "004.186.902-86", DateTime.Parse("10, 06, 1997"));
@@ -26,11 +26,11 @@ namespace BolsaFamilia;
             //pessoaBussiness.AtualizarDadosCadastrais(gibson);
             var pessoaFamilia = pessoaFamiliaBusiness.RecuperarPorId(2);
 
-            //var familia = new Familia {Cep = "000", Beneficio = beneficio, Cidade = "belem", Complemento = "ALTOS", Estado = "pará", Logradouro = "rua tanana", Numero = "13" };
-            //familiaBusiness.CadastrarFamilia(familia);
+        //var familia = new Familia {Cep = "000", Beneficio = beneficio, Cidade = "belem", Complemento = "ALTOS", Estado = "pará", Logradouro = "rua tanana", Numero = "13" };
+        //familiaBusiness.CadastrarFamilia(familia);
 
-            pessoaFamiliaBusiness.RemoverMembroFamilia(pessoaFamilia, ETipoDesvinculo.MORTE);
-           
+        //pessoaFamiliaBusiness.RemoverMembroFamilia(pessoaFamilia, ETipoDesvinculo.MORTE);
+        aliquotaTipoBeneficioBusiness.CadastrarAliquotaTipoBeneficio(150, ETipoBeneficio.BRC);
         }
 
         public static void ConfigureServices(IServiceCollection services)
@@ -40,6 +40,7 @@ namespace BolsaFamilia;
             .AddScoped<PessoaBusiness>()
             .AddScoped<FamiliaBusiness>()
             .AddScoped<PessoaFamiliaBusiness>()
-            .AddScoped<BeneficioBusiness>();
+            .AddScoped<BeneficioBusiness>()
+            .AddScoped<AliquotaTipoBeneficioBusiness>();
         }    
 }

@@ -16,7 +16,7 @@ public class RendaPessoaBusiness : AppBusiness<RendaPessoa>
         {
             throw new Exception("valor inválido, tente novamente");
         }
-        var pessoaExistente = pessoaBusiness.Recuperar(pessoa);
+        var pessoaExistente = pessoaBusiness.RecuperarPorCondicao(p => p.Id == pessoa.Id);
         if (pessoaExistente is not null)
         {
             RendaPessoa cadastroRenda = new RendaPessoa() { DataRegistro = DateTime.Now, Valor = valor, Pessoa = pessoaExistente };

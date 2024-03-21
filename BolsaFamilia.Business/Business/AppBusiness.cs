@@ -11,20 +11,26 @@ public abstract class AppBusiness<T> where T : class, IEntity
     {
         Repository = appRepository;
     }
-    public T? Recuperar(T entidade)
-    {          
-        var result = Repository.RecuperarUmPor(p => p.Id == entidade.Id);
-        return result;
-    }
+    //public T? RecuperarEntidade(T entidade)
+    //{          
+    //    var result = Repository.RecuperarUmPor(p => p.Id == entidade.Id);
+    //    return result;
+    //}
     public T? RecuperarPorId(int id)
     {
         var objeto = Repository.RecuperarUmPor(p => p.Id == id);
         return objeto;
     }
 
-    public IEnumerable<T>? RecuperarListaPorId (int id) 
+    public T? RecuperarPorCondicao(Func<T, bool> condicao)
     {
-        var result = Repository.RecuperarListaPor(p => p.Id == id);
+        var objeto = Repository.RecuperarUmPor(condicao);
+        return objeto;
+    }
+
+    public IEnumerable<T>? RecuperarListaPorCondicao (Func<T, bool> condicao) 
+    {
+        var result = Repository.RecuperarListaPor(condicao);
         return result;
     }
 }
