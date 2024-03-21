@@ -3,3 +3,5 @@ BolsaFamilia.Shared.Entity/bin/
 BolsaFamilia.Shared.Entity/obj/
 BolsaFamilia.Shared.Infra/bin/Debug/
 BolsaFamilia.Shared.Infra/obj/BolsaFamilia.Shared.Infra.csproj.nuget.dgspec.json
+BolsaFamilia/obj/
+BolsaFamilia.Shared.Infra/obj/
