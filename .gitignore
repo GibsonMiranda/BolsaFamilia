@@ -1,7 +1,13 @@
 .vs/
 BolsaFamilia.Shared.Entity/bin/
 BolsaFamilia.Shared.Entity/obj/
-BolsaFamilia.Shared.Infra/bin/Debug/
-BolsaFamilia.Shared.Infra/obj/BolsaFamilia.Shared.Infra.csproj.nuget.dgspec.json
-BolsaFamilia/obj/
+BolsaFamilia.Shared.Infra/bin/
 BolsaFamilia.Shared.Infra/obj/
+BolsaFamilia.Shared.Infra/obj/BolsaFamilia.Shared.Infra.csproj.nuget.dgspec.json
+BolsaFamilia/obj
+BolsaFamilia/obj/
+BolsaFamilia/BolsaFamilia.Business/obj/
+BolsaFamilia.Shared.Infra/obj/
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\obj\Debug\net8.0\BolsaFamilia.AssemblyInfo.cs
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia.Shared.Infra\obj\Debug\net8.0\BolsaFamilia.Shared.Infra.AssemblyInfoInputs.cache
+C:\Users\gibso\OneDrive\Documentos\EXERCICIOS C# ALURA\BolsaFamilia\BolsaFamilia\BolsaFamilia\obj\Debug\net8.0\BolsaFamilia.AssemblyInfoInputs.cache
