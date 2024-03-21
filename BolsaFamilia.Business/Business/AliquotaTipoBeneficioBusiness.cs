@@ -20,7 +20,7 @@ namespace BolsaFamilia.Business.Business
             aliquotaTipoBeneficio.TipoBeneficio.Equals(tipoBeneficio);
             aliquotaTipoBeneficio.Data = DateTime.Now;
             Repository.Adicionar(aliquotaTipoBeneficio);
-            Console.WriteLine($"aliquota cadastrada {tipoBeneficio}");
+            Console.WriteLine($"aliquota cadastrada com sucesso! Aliquota: {tipoBeneficio}");
         }
 
     }

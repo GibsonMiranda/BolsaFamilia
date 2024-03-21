@@ -30,8 +30,9 @@ namespace BolsaFamilia;
         //familiaBusiness.CadastrarFamilia(familia);
 
         //pessoaFamiliaBusiness.RemoverMembroFamilia(pessoaFamilia, ETipoDesvinculo.MORTE);
-        aliquotaTipoBeneficioBusiness.CadastrarAliquotaTipoBeneficio(150, ETipoBeneficio.BRC);
-        }
+        //aliquotaTipoBeneficioBusiness.CadastrarAliquotaTipoBeneficio(150, ETipoBeneficio.BRC);
+        Console.WriteLine("oi");
+    }
 
         public static void ConfigureServices(IServiceCollection services)
         {
