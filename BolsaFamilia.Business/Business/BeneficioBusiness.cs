@@ -22,18 +22,29 @@ public class BeneficioBusiness : AppBusiness<Beneficio>
         ValidacaoBeneficio(familiaId);
         ValidarRendaPerCapta(familiaId);
         var totalIntegrantesFamilia = pessoaFamiliaBusiness.RecuperarListaPorCondicao(p => p.Familia.Id == familiaId && p.DataDesvinculo is null)!.Count();
-        var valorAliquota = aliquotaTipoBeneficioBusiness.ObterAliquotaVigente(ETipoBeneficio.BRC);
-        
-        var valorTotalBrc = totalIntegrantesFamilia * valorAliquota;
+       
+        var valorAliquotaBrc = aliquotaTipoBeneficioBusiness.ObterAliquotaVigente(ETipoBeneficio.BRC);       
+        var valorTotalBrc = totalIntegrantesFamilia * valorAliquotaBrc;
         valorTotalBrc = valorTotalBrc < 600 ? 600 : valorTotalBrc;
 
-        var criancasDe0A6Anos = pessoaFamiliaBusiness.RecuperarListaPorCondicao(p => p.Familia.Id == familiaId && p.DataDesvinculo is null)
-                                                      .Where(p => p);
+        var dataAtual = DateTime.Now;
+        var criancasDe0A6Anos = pessoaFamiliaBusiness.RecuperarListaPorCondicao(p => p.Familia.Id == familiaId && p.DataDesvinculo is null)!
+                                                     .Where(p => dataAtual.AddYears(-6) <= p.Pessoa.DataNascimento).Count();
+        var valorAliquotaBpi = aliquotaTipoBeneficioBusiness.ObterAliquotaVigente(ETipoBeneficio.BPI);
+        var valorTotalBpi = criancasDe0A6Anos * valorAliquotaBpi;
 
 
+        var criancasDe7A18Anos = pessoaFamiliaBusiness.RecuperarListaPorCondicao(p => p.Familia.Id == familiaId && p.DataDesvinculo is null)!
+                                                     .Where(p => dataAtual >= p.Pessoa.DataNascimento.).Count();
+        
+        22 do 4 de 2017
+        22 do 03 de 2024 é 
+        /*- Benefício Variável Familiar (BVF): 50,00 por pessoa de 7 a 18 anos e gestantes
+        - Benefício Variável Família Nutriz (BVFN): 50,00 a mais bebês de 0 a 6 meses
+        */
     }
 
-    
+
 
     public void ValidarRendaPerCapta (int familiaId) 
     {
