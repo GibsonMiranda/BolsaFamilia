@@ -9,6 +9,7 @@ public class Beneficio : IEntity
     public int FamiliaId { get; set; }
     public bool Aprovado { get; set; }
     public EMotivoRejeicao? MotivoRejeicao { get; set; }
+    public DateTime? DataCalculoRejeicao { get; set; }
     public  DateTime? DataBloqueio { get; set; }
     public EMotivoBloqueio? MotivoBloqueio { get; set; }
 
