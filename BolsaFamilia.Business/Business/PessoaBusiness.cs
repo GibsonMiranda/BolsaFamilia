@@ -31,8 +31,8 @@ public class PessoaBusiness : AppBusiness<Pessoa>
     {
         ValidarDadosNulos(pessoa);
         var pessoaExistente = Repository.RecuperarUmPor(p => p.Id == pessoa.Id);
-
-        if (!pessoaExistente.Cpf.Equals(pessoa.Cpf))
+        var cpf = ValidacaoCpf.ValidarCpf(pessoa.Cpf).Item2;
+        if (!pessoaExistente!.Cpf.Equals(cpf))
         {
             throw new Exception("O campo CPF não pode ser alterado");
         }

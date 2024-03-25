@@ -16,7 +16,7 @@ public class FamiliaBusiness : AppBusiness<Familia>
     private void ValidarDados(Familia familia)
     {
         if (familia.Estado is null || familia.Logradouro is null || familia.Numero is null
-            || familia.Cep is null || familia.Cidade is null || familia.Complemento is null || familia.Beneficio is null)
+            || familia.Cep is null || familia.Cidade is null || familia.Complemento is null)
         {
             throw new Exception("valores nulos. Tente novamente");
         }

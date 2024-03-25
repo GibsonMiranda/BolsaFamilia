@@ -40,7 +40,7 @@ public class PessoaFamiliaBusiness : AppBusiness<PessoaFamilia>
     private void ValidarDados(Pessoa pessoa, Familia familia, ETipoVinculo vinculo)
     {
         var titularExistente = Repository.RecuperarUmPor(p => p.TipoVinculo.Equals(ETipoVinculo.TITULAR)
-                                                                    && p.Familia.Id == familia.Id && p.DataDesvinculo is null);      
+                                                         && p.Familia.Id == familia.Id && p.DataDesvinculo is null);      
         if (!vinculo.Equals(ETipoVinculo.TITULAR) && titularExistente is null)
         {
             throw new Exception("primeiro informe o titular");
