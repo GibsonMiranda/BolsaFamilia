@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
     //private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BolsaFamilia;Integrated Security=True;MultipleActiveResultSets=True;" +
     //    "Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
-    private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BolsaFamilia;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+    private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BolsaFamilia;Integrated Security=True; MultipleActiveResultSets=True; Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
